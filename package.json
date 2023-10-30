@@ -1,0 +1,14 @@
+{
+  "name": "hardhat-project",
+  "scripts": {
+    "fork": "npx hardhat node --fork https://eth-mainnet.g.alchemy.com/v2/83Yr3tLIfrrv7AZ1xqYjCilxUMwy1LH1 --fork-block-number 18436820",
+    "updateOracle": "npx hardhat test ./test/aavePriceTest.ts --network localhost"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "hardhat": "^2.18.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
